@@ -141,6 +141,9 @@ namespace QuanLyPhongTro.services.Implementations
                 MaxTenants = room.Maxtenants,
             };
         }
-        public async Task<RoomResponseDto>
+        public async Task<bool> DeleteRoomAsync (int id)
+        {
+            
+        }
     }
 }
