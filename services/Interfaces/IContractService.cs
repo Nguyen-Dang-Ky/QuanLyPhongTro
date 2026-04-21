@@ -1,1 +1,1 @@
-using Microsoft.AspNetCore;
+Task<bool> DeleteRoomAsync (int id);
