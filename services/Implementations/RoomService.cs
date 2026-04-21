@@ -141,5 +141,6 @@ namespace QuanLyPhongTro.services.Implementations
                 MaxTenants = room.Maxtenants,
             };
         }
+        public async Task<RoomResponseDto>
     }
 }
