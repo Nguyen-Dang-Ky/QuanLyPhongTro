@@ -9,14 +9,10 @@ namespace QuanLyPhongTro.services.Interfaces
 {
     public interface IContractService
     {
-        Task<IEnumerable<CustomerResponseDto>> GetAllCustomerAsync();
-        Task<CustomerResponseDto?> GetCustomerById(int id);
-        Task<CustomerResponseDto> CreateCustomerAsync(CustomerCreateDto createdto);
-        Task<CustomerResponseDto> UpdateCustomerAsync(CustomerUpdateDto updatedto);
-        Task<bool> DeleteCustomerAsync(int id); 
-
         Task<IEnumerable<ContractResponseDto>> GetAllContractAsync();
         Task<ContractResponseDto?> GetContractById(int id);
-        Task<>
+        Task<ContractResponseDto> createContractAsync(CreateContractDto createDto);
+        Task<ContractResponseDto> updateContractAsync(UpdateContractDto updateDto);
+        Task<bool> deleteContractAsync(int id);
     }
 }
